@@ -1,4 +1,4 @@
-module github.com/paketo-buildpacks/bellsoft-liberica/v9
+module github.com/initializ-buildpacks/bellsoft-liberica/v9
 
 go 1.20
 
