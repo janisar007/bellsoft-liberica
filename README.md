@@ -1,4 +1,4 @@
-# `gcr.io/initializ-buildpacks/bellsoft-liberica`
+# `https://hub.docker.com/r/bellsoft-liberica`
 
 The Initializ Buildpack for BellSoft Liberica is a Cloud Native Buildpack that provides the BellSoft Liberica implementations of JREs and JDKs.
 
