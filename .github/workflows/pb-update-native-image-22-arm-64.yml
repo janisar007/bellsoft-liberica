@@ -102,4 +102,4 @@ jobs:
                 labels: ${{ steps.buildpack.outputs.version-label }}, type:dependency-upgrade
                 signoff: true
                 title: Bump Native Image 22 ARM64 from ${{ steps.buildpack.outputs.old-version }} to ${{ steps.buildpack.outputs.new-version }}
-                token: ${{ secrets.PAKETO_BOT_GITHUB_TOKEN }}
+                token: ${{ secrets.PAT }}
