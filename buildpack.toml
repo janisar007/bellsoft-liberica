@@ -19,7 +19,7 @@ api = "0.7"
   homepage = "https://github.com/initializ-buildpacks/bellsoft-liberica"
   id = "initializ-buildpacks/bellsoft-liberica"
   keywords = ["java", "jvm", "jre", "jdk"]
-  name = "Initializ Buildpack for BellSoft Liberica"
+  name = "Paketo Buildpack for BellSoft Liberica"
   sbom-formats = ["application/vnd.syft+json", "application/vnd.cyclonedx+json"]
   version = "{{.version}}"
 
@@ -28,7 +28,7 @@ api = "0.7"
     uri = "https://github.com/initializ-buildpacks/bellsoft-liberica/blob/main/LICENSE"
 
 [metadata]
-  include-files = ["LICENSE", "NOTICE", "README.md", "linux/amd64/bin/build", "linux/amd64/bin/detect", "linux/amd64/bin/main", "linux/amd64/bin/helper", "linux/arm64/bin/build", "linux/arm64/bin/detect", "linux/arm64/bin/main", "linux/arm64/bin/helper", "buildpack.toml"]
+  include-files = ["LICENSE", "NOTICE", "README.md", "bin/build", "bin/detect", "bin/helper", "bin/main", "buildpack.toml"]
   pre-package = "scripts/build.sh"
 
   [[metadata.configurations]]
@@ -175,11 +175,11 @@ api = "0.7"
     id = "jdk"
     name = "BellSoft Liberica JDK"
     purl = "pkg:generic/bellsoft-jdk@11.0.23?arch=amd64"
-    sha256 = "be11887ca5fd7d7738ce5aaf4873d93e00c83eaa8d0086cda830c967fdad9806"
-    source = "https://github.com/bell-sw/Liberica/releases/download/11.0.23+10/bellsoft-jdk11.0.23+10-src.tar.gz"
-    source-sha256 = "05f1345e131a6ee2d37ac10951ba949606352707ad584baa24c236260efc3f10"
+    sha256 = "f213c2457731e4ff25ffec4e031c37ba114481c107a63711bc310faa58cdc61e"
+    source = "https://github.com/bell-sw/Liberica/releases/download/11.0.23+12/bellsoft-jdk11.0.23+12-src.tar.gz"
+    source-sha256 = "60d5e3fd60eff37b4b3ef1f7424a7b4c7128d525f5539a4fe0c4aeaa853c1b8e"
     stacks = ["*"]
-    uri = "https://github.com/bell-sw/Liberica/releases/download/11.0.23+10/bellsoft-jdk11.0.23+10-linux-amd64.tar.gz"
+    uri = "https://github.com/bell-sw/Liberica/releases/download/11.0.23+12/bellsoft-jdk11.0.23+12-linux-amd64.tar.gz"
     version = "11.0.23"
 
     [[metadata.dependencies.licenses]]
@@ -191,11 +191,11 @@ api = "0.7"
     id = "jre"
     name = "BellSoft Liberica JRE"
     purl = "pkg:generic/bellsoft-jre@11.0.23?arch=amd64"
-    sha256 = "63d9587fcbd053b3d68683a49400f51112720e929d939f7317cd7ae297bd3055"
-    source = "https://github.com/bell-sw/Liberica/releases/download/11.0.23+10/bellsoft-jdk11.0.23+10-src.tar.gz"
-    source-sha256 = "05f1345e131a6ee2d37ac10951ba949606352707ad584baa24c236260efc3f10"
+    sha256 = "5cf713fc987d5cb87c24b98c7583209193367bd28fe0725964729a882ea27214"
+    source = "https://github.com/bell-sw/Liberica/releases/download/11.0.23+12/bellsoft-jdk11.0.23+12-src.tar.gz"
+    source-sha256 = "60d5e3fd60eff37b4b3ef1f7424a7b4c7128d525f5539a4fe0c4aeaa853c1b8e"
     stacks = ["*"]
-    uri = "https://github.com/bell-sw/Liberica/releases/download/11.0.23+10/bellsoft-jre11.0.23+10-linux-amd64.tar.gz"
+    uri = "https://github.com/bell-sw/Liberica/releases/download/11.0.23+12/bellsoft-jre11.0.23+12-linux-amd64.tar.gz"
     version = "11.0.23"
 
     [[metadata.dependencies.licenses]]
@@ -223,11 +223,11 @@ api = "0.7"
     id = "jdk"
     name = "BellSoft Liberica JDK"
     purl = "pkg:generic/bellsoft-jdk@17.0.11?arch=amd64"
-    sha256 = "f875d6b491c7a9e16f029e001421a411b4d5223260c58f0108a82f3f7de17530"
-    source = "https://github.com/bell-sw/Liberica/releases/download/17.0.11+10/bellsoft-jdk17.0.11+10-src.tar.gz"
-    source-sha256 = "360d353b81651d3911cccbf47f68ce0cfed1c225f33a28a50c5753c754e39840"
+    sha256 = "9a3c7019e2632efec2e306c0c26e4e7907693e6f421796599f2d827a86e63e22"
+    source = "https://github.com/bell-sw/Liberica/releases/download/17.0.11+12/bellsoft-jdk17.0.11+12-src.tar.gz"
+    source-sha256 = "fcbb05aeba698b6bf57a5fd2300a68aed7776d51fc5aaed2cd29685ade123ae2"
     stacks = ["*"]
-    uri = "https://github.com/bell-sw/Liberica/releases/download/17.0.11+10/bellsoft-jdk17.0.11+10-linux-amd64.tar.gz"
+    uri = "https://github.com/bell-sw/Liberica/releases/download/17.0.11+12/bellsoft-jdk17.0.11+12-linux-amd64.tar.gz"
     version = "17.0.11"
 
     [[metadata.dependencies.licenses]]
@@ -239,11 +239,11 @@ api = "0.7"
     id = "jre"
     name = "BellSoft Liberica JRE"
     purl = "pkg:generic/bellsoft-jre@17.0.11?arch=amd64"
-    sha256 = "ae198ab94be92ea0054bb86479388ce7e064e960f15fbd706600e0fb90344e6a"
-    source = "https://github.com/bell-sw/Liberica/releases/download/17.0.11+10/bellsoft-jdk17.0.11+10-src.tar.gz"
-    source-sha256 = "360d353b81651d3911cccbf47f68ce0cfed1c225f33a28a50c5753c754e39840"
+    sha256 = "fd331d4c4c769c1a2aef1191733f0298932772b860ccb8b5b1a99cd37594a48f"
+    source = "https://github.com/bell-sw/Liberica/releases/download/17.0.11+12/bellsoft-jdk17.0.11+12-src.tar.gz"
+    source-sha256 = "fcbb05aeba698b6bf57a5fd2300a68aed7776d51fc5aaed2cd29685ade123ae2"
     stacks = ["*"]
-    uri = "https://github.com/bell-sw/Liberica/releases/download/17.0.11+10/bellsoft-jre17.0.11+10-linux-amd64.tar.gz"
+    uri = "https://github.com/bell-sw/Liberica/releases/download/17.0.11+12/bellsoft-jre17.0.11+12-linux-amd64.tar.gz"
     version = "17.0.11"
 
     [[metadata.dependencies.licenses]]
@@ -257,7 +257,7 @@ api = "0.7"
     purl = "pkg:generic/bellsoft-nik@23.0.4?arch=amd64"
     sha256 = "a10ce115f831ced704dae49fd75b1e7d155cc0e5f46cddb3fb4081c859d6d594"
     source = "https://github.com/bell-sw/LibericaNIK/releases/download/23.0.4+1-17.0.11+10/bellsoft-liberica-vm-openjdk17.0.11+10-23.0.4+1-src.tar.gz"
-    source-sha256 = "907cc89604efadfb2a88abd56dd1cfc6756976d5143d238d2a0f0229de34f04d"
+    source-sha256 = "da7e1339ae123e1eba7754144d45af6666c5a587a2dcf2c1c62b7f4d3e94f130"
     stacks = ["*"]
     uri = "https://github.com/bell-sw/LibericaNIK/releases/download/23.0.4+1-17.0.11+10/bellsoft-liberica-vm-core-openjdk17.0.11+10-23.0.4+1-linux-amd64.tar.gz"
     version = "17.0.11"
@@ -271,11 +271,11 @@ api = "0.7"
     id = "jdk"
     name = "BellSoft Liberica JDK"
     purl = "pkg:generic/bellsoft-jdk@21.0.3?arch=amd64"
-    sha256 = "5c00dc3dad16525a1536d506a5d076500d2f3f3b33ce1f7165a0f92f38830978"
-    source = "https://github.com/bell-sw/Liberica/releases/download/21.0.3+10/bellsoft-jdk21.0.3+10-src.tar.gz"
-    source-sha256 = "ad695dcfe2064258b82fa165464b867e3c2a30ae1fc7f2102f59fce6cd790a43"
+    sha256 = "dbbaa1399dde73d6e68d7434d36b3129f73012ba0fa8fd31b76ba0e9938cbe6b"
+    source = "https://github.com/bell-sw/Liberica/releases/download/21.0.3+12/bellsoft-jdk21.0.3+12-src.tar.gz"
+    source-sha256 = "2ab89f6ff1c0e65d2e35c48a7174cf27eae6d9824bf62cc6de2f5dbd08ae12cd"
     stacks = ["*"]
-    uri = "https://github.com/bell-sw/Liberica/releases/download/21.0.3+10/bellsoft-jdk21.0.3+10-linux-amd64.tar.gz"
+    uri = "https://github.com/bell-sw/Liberica/releases/download/21.0.3+12/bellsoft-jdk21.0.3+12-linux-amd64.tar.gz"
     version = "21.0.3"
 
     [[metadata.dependencies.licenses]]
@@ -287,11 +287,11 @@ api = "0.7"
     id = "jre"
     name = "BellSoft Liberica JRE"
     purl = "pkg:generic/bellsoft-jre@21.0.3?arch=amd64"
-    sha256 = "dafb04e1ee339d242ea2b27b3bf5e44a8e64ff8f8af6b7c7517fbc35e1d73e6e"
-    source = "https://github.com/bell-sw/Liberica/releases/download/21.0.3+10/bellsoft-jdk21.0.3+10-src.tar.gz"
-    source-sha256 = "ad695dcfe2064258b82fa165464b867e3c2a30ae1fc7f2102f59fce6cd790a43"
+    sha256 = "d9969b4c3ba80d33a97c751328d13725413a57981322788662bdae17363f05d3"
+    source = "https://github.com/bell-sw/Liberica/releases/download/21.0.3+12/bellsoft-jdk21.0.3+12-src.tar.gz"
+    source-sha256 = "2ab89f6ff1c0e65d2e35c48a7174cf27eae6d9824bf62cc6de2f5dbd08ae12cd"
     stacks = ["*"]
-    uri = "https://github.com/bell-sw/Liberica/releases/download/21.0.3+10/bellsoft-jre21.0.3+10-linux-amd64.tar.gz"
+    uri = "https://github.com/bell-sw/Liberica/releases/download/21.0.3+12/bellsoft-jre21.0.3+12-linux-amd64.tar.gz"
     version = "21.0.3"
 
     [[metadata.dependencies.licenses]]
@@ -319,11 +319,11 @@ api = "0.7"
     id = "jdk"
     name = "BellSoft Liberica JDK"
     purl = "pkg:generic/bellsoft-jdk@22.0.1?arch=amd64"
-    sha256 = "7e3aff8eb43e17f973fe482e6241f3c985597ef659e65d0462f8541bb384fcdc"
-    source = "https://github.com/bell-sw/Liberica/releases/download/22.0.1+10/bellsoft-jdk22.0.1+10-src.tar.gz"
-    source-sha256 = "a4ff31ec1087c2d4d8095b3dff75ab95fe168c2da5e430c9413b5a24cc7eb093"
+    sha256 = "50dba52396e0f99498d7331d4c0289d55873b2b5ac923cc876acbf7741d7b92d"
+    source = "https://github.com/bell-sw/Liberica/releases/download/22.0.1+12/bellsoft-jdk22.0.1+12-src.tar.gz"
+    source-sha256 = "ef63c01782884656ccef837201ae112e5beadfeb90719acb941f32da25145163"
     stacks = ["*"]
-    uri = "https://github.com/bell-sw/Liberica/releases/download/22.0.1+10/bellsoft-jdk22.0.1+10-linux-amd64.tar.gz"
+    uri = "https://github.com/bell-sw/Liberica/releases/download/22.0.1+12/bellsoft-jdk22.0.1+12-linux-amd64.tar.gz"
     version = "22.0.1"
 
     [[metadata.dependencies.licenses]]
@@ -335,11 +335,11 @@ api = "0.7"
     id = "jre"
     name = "BellSoft Liberica JRE"
     purl = "pkg:generic/bellsoft-jre@22.0.1?arch=amd64"
-    sha256 = "464bea766e58c9d4dfd09d6c1584af23345850f419a8ed29a9bcc5baf30bb2de"
-    source = "https://github.com/bell-sw/Liberica/releases/download/22.0.1+10/bellsoft-jdk22.0.1+10-src.tar.gz"
-    source-sha256 = "a4ff31ec1087c2d4d8095b3dff75ab95fe168c2da5e430c9413b5a24cc7eb093"
+    sha256 = "80b8bb5a1168064834ed26d8f05f06829a211a359ffa7e82e4a32db973418dd6"
+    source = "https://github.com/bell-sw/Liberica/releases/download/22.0.1+12/bellsoft-jdk22.0.1+12-src.tar.gz"
+    source-sha256 = "ef63c01782884656ccef837201ae112e5beadfeb90719acb941f32da25145163"
     stacks = ["*"]
-    uri = "https://github.com/bell-sw/Liberica/releases/download/22.0.1+10/bellsoft-jre22.0.1+10-linux-amd64.tar.gz"
+    uri = "https://github.com/bell-sw/Liberica/releases/download/22.0.1+12/bellsoft-jre22.0.1+12-linux-amd64.tar.gz"
     version = "22.0.1"
 
     [[metadata.dependencies.licenses]]
@@ -351,11 +351,11 @@ api = "0.7"
     id = "native-image-svm"
     name = "BellSoft Liberica NIK"
     purl = "pkg:generic/bellsoft-nik@23.1.3?arch=amd64"
-    sha256 = "9fde42cc5dc3f52a552260b0c966c409b016eda32eddcfbf16530edc1cbaf8d6"
-    source = "https://github.com/bell-sw/LibericaNIK/releases/download/23.1.3+1-21.0.3+10/bellsoft-liberica-vm-openjdk21.0.3+10-23.1.3+1-src.tar.gz"
-    source-sha256 = "7b241a2ba43577acff49e1721bf5b2ec853aed3e7a83fdac7c3e248d3f5ba03e"
+    sha256 = "03e6997a84f6fa13d206782a24ef5d657893949784c16b24ff24937b96e2f045"
+    source = "https://github.com/bell-sw/LibericaNIK/releases/download/23.1.3+2-21.0.3+10/bellsoft-liberica-vm-openjdk21.0.3+10-23.1.3+2-src.tar.gz"
+    source-sha256 = "fc94f9c32b6c2400c0bf1cebe5d8fb438c85622aeca2aeab6a97c1fb124f7c47"
     stacks = ["*"]
-    uri = "https://github.com/bell-sw/LibericaNIK/releases/download/23.1.3+1-21.0.3+10/bellsoft-liberica-vm-core-openjdk21.0.3+10-23.1.3+1-linux-amd64.tar.gz"
+    uri = "https://github.com/bell-sw/LibericaNIK/releases/download/23.1.3+2-21.0.3+10/bellsoft-liberica-vm-core-openjdk21.0.3+10-23.1.3+2-linux-amd64.tar.gz"
     version = "21.0.3"
 
     [[metadata.dependencies.licenses]]
@@ -399,11 +399,11 @@ api = "0.7"
     id = "jdk"
     name = "BellSoft Liberica JDK"
     purl = "pkg:generic/bellsoft-jdk@11.0.23?arch=arm64"
-    sha256 = "7eb8c05fee29f039eb723fba4f73014d0da62980bd88d6eba172a204123bd7e8"
-    source = "https://github.com/bell-sw/Liberica/releases/download/11.0.23+10/bellsoft-jdk11.0.23+10-src.tar.gz"
-    source-sha256 = "05f1345e131a6ee2d37ac10951ba949606352707ad584baa24c236260efc3f10"
+    sha256 = "d47f8393c2a8791028bdc740bb5c3e817dd7bb38d20295c15152bc6a4d2ce145"
+    source = "https://github.com/bell-sw/Liberica/releases/download/11.0.23+12/bellsoft-jdk11.0.23+12-src.tar.gz"
+    source-sha256 = "60d5e3fd60eff37b4b3ef1f7424a7b4c7128d525f5539a4fe0c4aeaa853c1b8e"
     stacks = ["*"]
-    uri = "https://github.com/bell-sw/Liberica/releases/download/11.0.23+10/bellsoft-jdk11.0.23+10-linux-aarch64.tar.gz"
+    uri = "https://github.com/bell-sw/Liberica/releases/download/11.0.23+12/bellsoft-jdk11.0.23+12-linux-aarch64.tar.gz"
     version = "11.0.23"
 
     [[metadata.dependencies.licenses]]
@@ -415,11 +415,11 @@ api = "0.7"
     id = "jre"
     name = "BellSoft Liberica JRE"
     purl = "pkg:generic/bellsoft-jre@11.0.23?arch=arm64"
-    sha256 = "3783c8ed0e78177f671d91159f6a4cfca1441be06683a445b88a24da302b8844"
-    source = "https://github.com/bell-sw/Liberica/releases/download/11.0.23+10/bellsoft-jdk11.0.23+10-src.tar.gz"
-    source-sha256 = "05f1345e131a6ee2d37ac10951ba949606352707ad584baa24c236260efc3f10"
+    sha256 = "a19f0c07c4602ab567d0b365b4a1dd8505dca91751a1d231a81ae071d9a2fc7d"
+    source = "https://github.com/bell-sw/Liberica/releases/download/11.0.23+12/bellsoft-jdk11.0.23+12-src.tar.gz"
+    source-sha256 = "60d5e3fd60eff37b4b3ef1f7424a7b4c7128d525f5539a4fe0c4aeaa853c1b8e"
     stacks = ["*"]
-    uri = "https://github.com/bell-sw/Liberica/releases/download/11.0.23+10/bellsoft-jre11.0.23+10-linux-aarch64.tar.gz"
+    uri = "https://github.com/bell-sw/Liberica/releases/download/11.0.23+12/bellsoft-jre11.0.23+12-linux-aarch64.tar.gz"
     version = "11.0.23"
 
     [[metadata.dependencies.licenses]]
@@ -447,11 +447,11 @@ api = "0.7"
     id = "jdk"
     name = "BellSoft Liberica JDK"
     purl = "pkg:generic/bellsoft-jdk@17.0.11?arch=arm64"
-    sha256 = "a7bf0d21c8fe70694028db8bb8042f24479addb69e6a8f5b0b53807008b70027"
-    source = "https://github.com/bell-sw/Liberica/releases/download/17.0.11+10/bellsoft-jdk17.0.11+10-src.tar.gz"
-    source-sha256 = "360d353b81651d3911cccbf47f68ce0cfed1c225f33a28a50c5753c754e39840"
+    sha256 = "6250b2ebfe5850ca78568f142a61a4d5323d57fb45330814617dcf9d0eee6233"
+    source = "https://github.com/bell-sw/Liberica/releases/download/17.0.11+12/bellsoft-jdk17.0.11+12-src.tar.gz"
+    source-sha256 = "fcbb05aeba698b6bf57a5fd2300a68aed7776d51fc5aaed2cd29685ade123ae2"
     stacks = ["*"]
-    uri = "https://github.com/bell-sw/Liberica/releases/download/17.0.11+10/bellsoft-jdk17.0.11+10-linux-aarch64.tar.gz"
+    uri = "https://github.com/bell-sw/Liberica/releases/download/17.0.11+12/bellsoft-jdk17.0.11+12-linux-aarch64.tar.gz"
     version = "17.0.11"
 
     [[metadata.dependencies.licenses]]
@@ -463,11 +463,11 @@ api = "0.7"
     id = "jre"
     name = "BellSoft Liberica JRE"
     purl = "pkg:generic/bellsoft-jre@17.0.11?arch=arm64"
-    sha256 = "cf02a5b19be29edf62ce51adff8baa898ee1e1e24b2b09af5b1ce006f607a75a"
-    source = "https://github.com/bell-sw/Liberica/releases/download/17.0.11+10/bellsoft-jdk17.0.11+10-src.tar.gz"
-    source-sha256 = "360d353b81651d3911cccbf47f68ce0cfed1c225f33a28a50c5753c754e39840"
+    sha256 = "bb86af98b9f2e6ab0e0019452fd19cd05b048bc7247ef14ef02ebd233b449cae"
+    source = "https://github.com/bell-sw/Liberica/releases/download/17.0.11+12/bellsoft-jdk17.0.11+12-src.tar.gz"
+    source-sha256 = "fcbb05aeba698b6bf57a5fd2300a68aed7776d51fc5aaed2cd29685ade123ae2"
     stacks = ["*"]
-    uri = "https://github.com/bell-sw/Liberica/releases/download/17.0.11+10/bellsoft-jre17.0.11+10-linux-aarch64.tar.gz"
+    uri = "https://github.com/bell-sw/Liberica/releases/download/17.0.11+12/bellsoft-jre17.0.11+12-linux-aarch64.tar.gz"
     version = "17.0.11"
 
     [[metadata.dependencies.licenses]]
@@ -481,7 +481,7 @@ api = "0.7"
     purl = "pkg:generic/bellsoft-nik@23.0.4?arch=arm64"
     sha256 = "5b8ccf52f2e712198f684898e3699374efec2d88bcdc22329725f7d9a49a211a"
     source = "https://github.com/bell-sw/LibericaNIK/releases/download/23.0.4+1-17.0.11+10/bellsoft-liberica-vm-openjdk17.0.11+10-23.0.4+1-src.tar.gz"
-    source-sha256 = "907cc89604efadfb2a88abd56dd1cfc6756976d5143d238d2a0f0229de34f04d"
+    source-sha256 = "da7e1339ae123e1eba7754144d45af6666c5a587a2dcf2c1c62b7f4d3e94f130"
     stacks = ["*"]
     uri = "https://github.com/bell-sw/LibericaNIK/releases/download/23.0.4+1-17.0.11+10/bellsoft-liberica-vm-core-openjdk17.0.11+10-23.0.4+1-linux-aarch64.tar.gz"
     version = "17.0.11"
@@ -495,11 +495,11 @@ api = "0.7"
     id = "jdk"
     name = "BellSoft Liberica JDK"
     purl = "pkg:generic/bellsoft-jdk@21.0.3?arch=arm64"
-    sha256 = "bdb5e4673257cca82816f588d342b46c1bfb34a64c1befa793ac748979e50f36"
-    source = "https://github.com/bell-sw/Liberica/releases/download/21.0.3+10/bellsoft-jdk21.0.3+10-src.tar.gz"
-    source-sha256 = "ad695dcfe2064258b82fa165464b867e3c2a30ae1fc7f2102f59fce6cd790a43"
+    sha256 = "4a2718de5acfe49744ebc593d053106ce55a34027e50baf6698648f19eaf32bd"
+    source = "https://github.com/bell-sw/Liberica/releases/download/21.0.3+12/bellsoft-jdk21.0.3+12-src.tar.gz"
+    source-sha256 = "2ab89f6ff1c0e65d2e35c48a7174cf27eae6d9824bf62cc6de2f5dbd08ae12cd"
     stacks = ["*"]
-    uri = "https://github.com/bell-sw/Liberica/releases/download/21.0.3+10/bellsoft-jdk21.0.3+10-linux-aarch64.tar.gz"
+    uri = "https://github.com/bell-sw/Liberica/releases/download/21.0.3+12/bellsoft-jdk21.0.3+12-linux-aarch64.tar.gz"
     version = "21.0.3"
 
     [[metadata.dependencies.licenses]]
@@ -511,11 +511,11 @@ api = "0.7"
     id = "jre"
     name = "BellSoft Liberica JRE"
     purl = "pkg:generic/bellsoft-jre@21.0.3?arch=arm64"
-    sha256 = "a1d2b7dfdb81b80bf11a07a2b6ec4175fcfdef004de3f69f6baf6c72fb6e8871"
-    source = "https://github.com/bell-sw/Liberica/releases/download/21.0.3+10/bellsoft-jdk21.0.3+10-src.tar.gz"
-    source-sha256 = "ad695dcfe2064258b82fa165464b867e3c2a30ae1fc7f2102f59fce6cd790a43"
+    sha256 = "4d25ef461a156694dfbff29e6526e1bd52a0d22fcc77cead643954f42d88d1cb"
+    source = "https://github.com/bell-sw/Liberica/releases/download/21.0.3+12/bellsoft-jdk21.0.3+12-src.tar.gz"
+    source-sha256 = "2ab89f6ff1c0e65d2e35c48a7174cf27eae6d9824bf62cc6de2f5dbd08ae12cd"
     stacks = ["*"]
-    uri = "https://github.com/bell-sw/Liberica/releases/download/21.0.3+10/bellsoft-jre21.0.3+10-linux-aarch64.tar.gz"
+    uri = "https://github.com/bell-sw/Liberica/releases/download/21.0.3+12/bellsoft-jre21.0.3+12-linux-aarch64.tar.gz"
     version = "21.0.3"
 
     [[metadata.dependencies.licenses]]
@@ -527,11 +527,11 @@ api = "0.7"
     id = "native-image-svm"
     name = "BellSoft Liberica NIK"
     purl = "pkg:generic/bellsoft-nik@23.1.3?arch=arm64"
-    sha256 = "668e993a9f89704afbfc5e5c1f795a55e059f74ac24468b3948407f74ddf66fa"
-    source = "https://github.com/bell-sw/LibericaNIK/releases/download/23.1.3+1-21.0.3+10/bellsoft-liberica-vm-openjdk21.0.3+10-23.1.3+1-src.tar.gz"
-    source-sha256 = "7b241a2ba43577acff49e1721bf5b2ec853aed3e7a83fdac7c3e248d3f5ba03e"
+    sha256 = "c1906cbce777683fceee313cbd9851253be65f78bb48791d118cdadaa1995e2e"
+    source = "https://github.com/bell-sw/LibericaNIK/releases/download/23.1.3+2-21.0.3+10/bellsoft-liberica-vm-openjdk21.0.3+10-23.1.3+2-src.tar.gz"
+    source-sha256 = "fc94f9c32b6c2400c0bf1cebe5d8fb438c85622aeca2aeab6a97c1fb124f7c47"
     stacks = ["*"]
-    uri = "https://github.com/bell-sw/LibericaNIK/releases/download/23.1.3+1-21.0.3+10/bellsoft-liberica-vm-core-openjdk21.0.3+10-23.1.3+1-linux-aarch64.tar.gz"
+    uri = "https://github.com/bell-sw/LibericaNIK/releases/download/23.1.3+2-21.0.3+10/bellsoft-liberica-vm-core-openjdk21.0.3+10-23.1.3+2-linux-aarch64.tar.gz"
     version = "21.0.3"
 
     [[metadata.dependencies.licenses]]
@@ -543,11 +543,11 @@ api = "0.7"
     id = "jdk"
     name = "BellSoft Liberica JDK"
     purl = "pkg:generic/bellsoft-jdk@22.0.1?arch=arm64"
-    sha256 = "d61bbf42972e494780a546bea7f41a6419f3be187e3621074f27a5470cc529d7"
-    source = "https://github.com/bell-sw/Liberica/releases/download/22.0.1+10/bellsoft-jdk22.0.1+10-src.tar.gz"
-    source-sha256 = "a4ff31ec1087c2d4d8095b3dff75ab95fe168c2da5e430c9413b5a24cc7eb093"
+    sha256 = "4f40433610af0d879850cee8c83220cf159cc59ecaa980b1fc0a77f4f402fe3a"
+    source = "https://github.com/bell-sw/Liberica/releases/download/22.0.1+12/bellsoft-jdk22.0.1+12-src.tar.gz"
+    source-sha256 = "ef63c01782884656ccef837201ae112e5beadfeb90719acb941f32da25145163"
     stacks = ["*"]
-    uri = "https://github.com/bell-sw/Liberica/releases/download/22.0.1+10/bellsoft-jdk22.0.1+10-linux-aarch64.tar.gz"
+    uri = "https://github.com/bell-sw/Liberica/releases/download/22.0.1+12/bellsoft-jdk22.0.1+12-linux-aarch64.tar.gz"
     version = "22.0.1"
 
     [[metadata.dependencies.licenses]]
@@ -559,11 +559,11 @@ api = "0.7"
     id = "jre"
     name = "BellSoft Liberica JRE"
     purl = "pkg:generic/bellsoft-jre@22.0.1?arch=arm64"
-    sha256 = "9755f79d35ed87348f6c3d67c9731072109ba7ef272a3d480cde1d105eb695d5"
-    source = "https://github.com/bell-sw/Liberica/releases/download/22.0.1+10/bellsoft-jdk22.0.1+10-src.tar.gz"
-    source-sha256 = "a4ff31ec1087c2d4d8095b3dff75ab95fe168c2da5e430c9413b5a24cc7eb093"
+    sha256 = "9f8646b1df16cf2012b7692d778d2cee73302cccae2f21a668834b193c780073"
+    source = "https://github.com/bell-sw/Liberica/releases/download/22.0.1+12/bellsoft-jdk22.0.1+12-src.tar.gz"
+    source-sha256 = "ef63c01782884656ccef837201ae112e5beadfeb90719acb941f32da25145163"
     stacks = ["*"]
-    uri = "https://github.com/bell-sw/Liberica/releases/download/22.0.1+10/bellsoft-jre22.0.1+10-linux-aarch64.tar.gz"
+    uri = "https://github.com/bell-sw/Liberica/releases/download/22.0.1+12/bellsoft-jre22.0.1+12-linux-aarch64.tar.gz"
     version = "22.0.1"
 
     [[metadata.dependencies.licenses]]
@@ -588,11 +588,3 @@ api = "0.7"
 
 [[stacks]]
   id = "*"
-
-[[targets]]
-  arch = "amd64"
-  os = "linux"
-
-[[targets]]
-  arch = "arm64"
-  os = "linux"
